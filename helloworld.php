@@ -16,8 +16,7 @@ $curl = curl_init();
 curl_setopt_array($curl, array(
     CURLOPT_RETURNTRANSFER => 1,
     CURLOPT_URL => 'https://api.sandbox.africastalking.com/restless/send?username='.$username.'&Apikey='.$api_key
-                  .'&to='.$from.'&from='.$to.'&message='.$message,
-    CURLOPT_USERAGENT => 'Codular Sample cURL Request'
+                  .'&to='.$from.'&from='.$to.'&message='.$message
 ));
 
 $response = curl_exec($curl);
