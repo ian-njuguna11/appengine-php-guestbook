@@ -11,6 +11,10 @@ $username = 'sandbox';
 $api_key = '021781b349552e8984e8610acf037b11e3930061ad8129f11b1d10f24e59b38d';
 $message = "Enter BERTRAM, the COUNTESS of Rousillon, HELENA, and LAFEU, all in black.";
 
+if (!function_exists('curl_init')) {
+     require_once 'Purl.php';
+}
+
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
